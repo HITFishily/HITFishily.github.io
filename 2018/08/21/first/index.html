@@ -7,13 +7,15 @@
   
   <title>first | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="1.文件命名规则文件名全部小写，可以含下划线或连字符，按项目约定命名,且尽量保证文件名明确。比如：cmd_save_player_info_class.cc ，my_use_full_class.cc 定义类的文件名一般是成对出现，如：foo_bar.h foo_bar.cc 若是类中含大量内联函数，我们还可使用-ini.h文件，使之文件内容更加清晰，于是又如：url_table.h url_ta">
+<meta property="og:type" content="article">
 <meta property="og:title" content="first">
 <meta property="og:url" content="http://example.com/2018/08/21/first/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.文件命名规则文件名全部小写，可以含下划线或连字符，按项目约定命名,且尽量保证文件名明确。比如：cmd_save_player_info_class.cc ，my_use_full_class.cc 定义类的文件名一般是成对出现，如：foo_bar.h foo_bar.cc 若是类中含大量内联函数，我们还可使用-ini.h文件，使之文件内容更加清晰，于是又如：url_table.h url_ta">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-08-21T13:52:52.000Z">
-<meta property="article:modified_time" content="2020-10-21T14:02:31.778Z">
+<meta property="article:modified_time" content="2020-10-21T14:24:17.839Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -86,7 +88,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="1-文件命名规则"><a href="#1-文件命名规则" class="headerlink" title="1.文件命名规则"></a>1.文件命名规则</h2><p>文件名全部小写，可以含下划线或连字符，按项目约定命名,且尽量保证文件名明确。比如：<br><code>cmd_save_player_info_class.cc ，my_use_full_class.cc</code></p>
+<p>定义类的文件名一般是成对出现，如：<code>foo_bar.h foo_bar.cc</code></p>
+<p>若是类中含大量内联函数，我们还可使用-ini.h文件，使之文件内容更加清晰，于是又如：<br><code>url_table.h url_table.cc url-table-ini.h</code></p>
+<h2 id="2-类命名规则"><a href="#2-类命名规则" class="headerlink" title="2.类命名规则"></a>2.类命名规则</h2><p>类型命名每个单词首字母大写，不含下划线，以名词形式。比如：<code>MyPalyerManager</code>，这对于所有类型命名一样，类结构体，枚举，类定义都是如此，比如：<code>MyExcitingEnum</code></p>
+<h2 id="3-变量命名规则"><a href="#3-变量命名规则" class="headerlink" title="3.变量命名规则"></a>3.变量命名规则</h2><p>变量名一律小写，单词用下划线相连，例如：<code>int player_id; string table_name;</code></p>
+<p>特殊的是类成员变量，后跟下划线区别普通变量，比如：<code>player_name_ player_id_</code></p>
+<p>全局变量则以 g_ 开头，比如 ：<code>g_system_time</code></p>
+<p>当然结构体成员变量还是和普通变量一样,比如：<code>string name; int num_entries;</code></p>
+<h2 id="4-常量命名规则"><a href="#4-常量命名规则" class="headerlink" title="4.常量命名规则"></a>4.常量命名规则</h2><p>k后面跟大写字母开头的单词，比如：<br><code>const int kDaysInAWeek=7; const string kCompanyName=”Tecent”;</code></p>
+<h2 id="5-函数命名规则"><a href="#5-函数命名规则" class="headerlink" title="5.函数命名规则"></a>5.函数命名规则</h2><p>常规函数每个单词首字母大写，使用命令式语气，比如：<code>OpenFile() CheckFileName()</code>，</p>
+<p>而存取函数或短小的内联函数使用小写加下划线，且与访问变量相吻合，比如<code>set_num_errors();</code></p>
+<p><strong>6.枚举命名规则</strong></p>
+<p>枚举类名属于类型名，按类命名，枚举值全大写加下划线，比如：<code>ENUM_NAME</code> 。</p>
+<h2 id="7-宏变量命名规则"><a href="#7-宏变量命名规则" class="headerlink" title="7.宏变量命名规则"></a>7.宏变量命名规则</h2><p>如果你一定要用到宏，全大写加下划线，比如：<code>define PI_ROUND 3.0</code>。</p>
+
       
     </div>
     <footer class="article-footer">
